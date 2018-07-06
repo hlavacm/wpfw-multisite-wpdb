@@ -1,0 +1,72 @@
+/*
+Theme Name: WPFW multisite WPDB
+Author: Martin Hlaváč
+Author URI: http://www.hlavacm.net/
+Description: Ukázková zkušební šablona za účelem demonstrace dotazování pomocé WPDB napříc multi-sitami.
+Version: 1.0
+*/
+
+.loading-upper {
+    position:relative
+}
+
+.loading-upper:before {
+    content:"";
+    width:200px;
+    height:13px;
+    position:absolute;
+    top:-20px;
+    left:50%;
+    margin-left:-100px;
+    display:block;
+    background:url("images/loadinganimation.gif") top center no-repeat
+}
+
+.loading {
+    position:relative;
+    overflow:hidden
+}
+
+loading:before {
+    content:"";
+    display:block;
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:1;
+    background:url("images/spinner.gif") top left no-repeat;
+    margin:-10px 0 0 -10px
+}
+
+#ktCookieStatement {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    font-size: 0.75em;
+    text-align: center;
+    color: #efefef;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    padding: 5px;
+}
+
+#ktCookieStatement a {
+    color: #efefef;
+}
+
+#ktCookieStatementText, #ktCookieStatementConfirm, #ktCookieStatementMoreInfo {
+    margin: 0 5px;
+}
+
+#ktCookieStatementConfirm, #ktCookieStatementMoreInfo {
+    cursor: pointer;
+    padding: 3px 5px;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
